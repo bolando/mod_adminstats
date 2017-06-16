@@ -38,7 +38,7 @@ class ModAdminStats
 		$db = JFactory::getDbo();
 		$db->setQuery("SELECT * FROM #__extensions WHERE name = 'plg_system_betterpreview'");
 		$wynik = $db->loadObjectList();
-		if ($wynik[0]->enabled == 1) {return "Tak";} 
+		if ($wynik[0]->enabled == 1) {return "Tak, jest";} 
 		else {return "Nie";};
     }
 	public static function sprawdzImageSizer()
