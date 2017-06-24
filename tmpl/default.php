@@ -9,41 +9,41 @@ defined('_JEXEC') or die;
       </tr>
 	  <tr>
         <td>Liczba kategorii aktywnych: </td>
-        <td><span class="badge badge-info hasTooltip" title="" data-original-title="Liczba kategorii aktywnych"><?php echo $artykuly->b;?></span></td>
+        <td><span class="badge badge-<?php echo $params->get('badgeStyle'); ?> hasTooltip" title="" data-original-title="Liczba kategorii aktywnych"><?php echo $artykuly->b;?></span></td>
       </tr>
 	  <tr>
         <td>Liczba pozycji menu FrontEnd: </td>
-        <td><span class="badge badge-info hasTooltip" title="" data-original-title="Liczba pozycji menu FrontEnd"><?php echo $menu[0]->a;?></span></td>
+        <td><span class="badge badge-<?php echo $params->get('badgeStyle'); ?> hasTooltip" title="" data-original-title="Liczba pozycji menu FrontEnd"><?php echo $menu[0]->a;?></span></td>
       </tr>
 	  <tr>
         <td>Liczba kategorii aktywnych: </td>
-        <td><span class="badge badge-info hasTooltip" title="" data-original-title="Liczba kategorii aktywnych"><?php echo $menu[0]->b;?></span></td>
+        <td><span class="badge badge-<?php echo $params->get('badgeStyle'); ?> hasTooltip" title="" data-original-title="Liczba kategorii aktywnych"><?php echo $menu[0]->b;?></span></td>
       </tr>
 	  <tr>
         <td>Liczba użytkowników: </td>
-        <td><span class="badge badge-info hasTooltip" title="" data-original-title="Liczba użytkowników"><?php echo $users;?></span></td>
+        <td><span class="badge badge-<?php echo $params->get('badgeStyle'); ?> hasTooltip" title="" data-original-title="Liczba użytkowników"><?php echo $users;?></span></td>
       </tr>
 	  <tr>
         <td>Posiada BetterPreview? </td>
-        <td><span class="badge badge-info hasTooltip" title="" data-original-title="Posiada BetterPreview"><?php echo $betterpreview;?></span></td>
+        <td><span class="badge badge-<?php echo $params->get('badgeStyle'); ?> hasTooltip" title="" data-original-title="Posiada BetterPreview"><?php echo $betterpreview;?></span></td>
       </tr>
 	  <tr>
         <td>Posiada ImageSizer? </td>
-        <td><span class="badge badge-info hasTooltip" title="" data-original-title="Posiada ImageSizer"><?php echo $imagesizer;?></span></td>
+        <td><span class="badge badge-<?php echo $params->get('badgeStyle'); ?> hasTooltip" title="" data-original-title="Posiada ImageSizer"><?php echo $imagesizer;?></span></td>
       </tr>
 	  <tr>
         <td>Posiada JCHOptimize? </td>
-        <td><span class="badge badge-info hasTooltip" title="" data-original-title="JCHOptimize?"><?php echo $jchoptimize;?></span></td>
+        <td><span class="badge badge-<?php echo $params->get('badgeStyle'); ?> hasTooltip" title="" data-original-title="JCHOptimize?"><?php echo $jchoptimize;?></span></td>
       </tr>
 	  <?php if (class_exists('RSFirewallConfig')):?>
 	  <tr>
         <td>Wynik RSFirewall: </td>
-        <td><span class="badge badge-info hasTooltip" title="" data-original-title="RSFirewall"><?php echo "$grade z $last";?></span></td>
+        <td><span class="badge badge-<?php echo $params->get('badgeStyle'); ?> hasTooltip" title="" data-original-title="RSFirewall"><?php echo "$grade z $last";?></span></td>
       </tr>
 	  <?php endif;?>
 	  <tr>
         <td>Wersja PHP: </td>
-        <td><span class="badge badge-info hasTooltip" title="" data-original-title="Wersja PHP"><?php echo phpversion();?></span></td>
+        <td><span class="badge badge-<?php echo $params->get('badgeStyle'); ?> hasTooltip" title="" data-original-title="Wersja PHP"><?php echo phpversion();?></span></td>
       </tr><tr>
         <td>Notatka: </td>
         <td><?php echo $notatka;?></td>
