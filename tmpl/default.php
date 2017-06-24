@@ -5,7 +5,7 @@ defined('_JEXEC') or die;
  <table class="table table-hover table-condensed">
       <tr>
         <td>Liczba artykułów: </td>
-        <td><span class="badge badge-info hasTooltip" title="" data-original-title="Liczba artykułów"><?php echo $artykuly->a;?></span></td>
+        <td><span class="badge badge-<?php echo $params->get('badgeStyle'); ?> hasTooltip" title="" data-original-title="Liczba artykułów"><?php echo $artykuly->a;?></span></td>
       </tr>
 	  <tr>
         <td>Liczba kategorii aktywnych: </td>
