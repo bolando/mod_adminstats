@@ -1,7 +1,7 @@
 <?php
-// No direct access
+// blokowanie bezpoœredniego uruchomienia
 defined('_JEXEC') or die;
-// Include the syndicate functions only once
+// w³¹czenie klasy modelu z jej metodami
 require_once dirname(__FILE__) . '/helper.php';
  
 $artykuly = ModAdminStats::pokazArtykuly();
@@ -18,4 +18,8 @@ if (class_exists('RSFirewallConfig')) {
 	$last = $config->get('system_check_last_run');
 }
 
+//przygotowanie do za³adowania stylów
+$doc =& JFactory::getDocument();
+
+//w³¹czenie domyœlnego layoutu
 require JModuleHelper::getLayoutPath('mod_adminstats');
