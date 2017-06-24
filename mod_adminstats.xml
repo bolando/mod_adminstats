@@ -6,8 +6,8 @@
 	<authorUrl>www.solmedia.pl</authorUrl>
 	<creationDate>czerwiec 2017</creationDate>
 	<copyright>OpenSource</copyright>
-    <version>1.1.3</version>
-    <description>Statystyki Admina, stworzone przez Andrzeja Bolewskiego 1.1.3</description>
+    <version>1.1.4</version>
+    <description>Statystyki Admina, stworzone przez Andrzeja Bolewskiego 1.1.4</description>
 	
 	<updateservers>
 		<server type="extension" name="AdminStats" priority="1">http://www.solmedia.pl/adminstats_update.xml</server>
@@ -19,16 +19,12 @@
         <filename>helper.php</filename>
         <filename>tmpl/default.php</filename>
         <filename>tmpl/index.html</filename>
+		<folder>css</folder>
     </files>
     <config>
 		<fields name="params">
 			<fieldset name="basic">
-				<field
-					name="iletabel"
-					type="text"
-					default="10"
-					label="Ile tabel pokazać?"
-					description="Ile tabel" />
+				<field name="iletabel" type="text" default="10" label="Ile tabel pokazać?" description="Ile tabel" />
 				<field name="badgeStyle" type="list" default="" label="Jaki styl przycisków" description="">
 				  <option value="success">success</option>
 				  <option value="info">info</option>
