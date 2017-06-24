@@ -12,8 +12,10 @@ $imagesizer = ModAdminStats::sprawdzImageSizer();
 $jchoptimize = ModAdminStats::sprawdzJCHOptimize();
 $tabele = ModAdminStats::sprawdzWielkoscTabel($params);
 $notatka = ModAdminStats::pobierzNotatke();
-$config = @RSFirewallConfig::getInstance();
-$grade = $config->get('grade');
-$last = $config->get('system_check_last_run');
+if (class_exists('RSFirewallConfig')) {
+	$config = @RSFirewallConfig::getInstance();
+	$grade = $config->get('grade');
+	$last = $config->get('system_check_last_run');
+}
 
 require JModuleHelper::getLayoutPath('mod_adminstats');
