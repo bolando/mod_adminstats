@@ -1,7 +1,8 @@
 <?php 
 // No direct access
 defined('_JEXEC') or die; 
-?>
+
+$doc->addStyleSheet('modules/mod_adminstats/css/style.css');?>
  <table class="table table-hover table-condensed">
       <tr>
         <td>Liczba artykułów: </td>
