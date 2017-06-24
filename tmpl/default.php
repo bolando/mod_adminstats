@@ -3,7 +3,7 @@
 defined('_JEXEC') or die; 
 
 $doc->addStyleSheet('modules/mod_adminstats/css/style.css');?>
- <table class="table table-hover table-condensed">
+ <table class="table table-hover table-condensed adminstats">
       <tr>
         <td>Liczba artykułów: </td>
         <td><span class="badge badge-<?php echo $params->get('badgeStyle'); ?> hasTooltip" title="" data-original-title="Liczba artykułów"><?php echo $artykuly->a;?></span></td>
