@@ -43,10 +43,12 @@ defined('_JEXEC') or die;
         <td>Posiada JCHOptimize? </td>
         <td><?php echo $jchoptimize;?></td>
       </tr>
+	  <?php if (class_exists('RSFirewallConfig')):?>
 	  <tr>
         <td>Wynik RSFirewall: </td>
         <td><?php echo "$grade z $last";?></td>
       </tr>
+	  <?php endif;?>
 	  <tr>
         <td>Wersja PHP: </td>
         <td><?php echo phpversion();?></td>
