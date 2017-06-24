@@ -13,7 +13,7 @@ defined('_JEXEC') or die;
     <tbody>
       <tr>
         <td>Liczba artykułów: </td>
-        <td><?php echo $artykuly->a;?></td>
+        <td><span class="badge badge-info hasTooltip" title="" data-original-title="Liczba artykułów"><?php echo $artykuly->a;?></span></td>
       </tr>
 	  <tr>
         <td>Liczba kategorii aktywnych: </td>
