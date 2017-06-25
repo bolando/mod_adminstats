@@ -44,7 +44,7 @@ $doc->addStyleSheet('modules/mod_adminstats/css/style.css');?>
 	  <?php endif;?>
 	  <tr>
         <td>Wersja PHP: </td>
-        <td><span class="badge badge-<?php echo $params->get('badgeStyle'); ?> hasTooltip" title="" data-original-title="Wersja PHP"><?php echo phpversion();?></span></td>
+        <td><span class="badge badge-<?php echo $params->get('badgeStyle'); ?> hasTooltip" title="" data-original-title="Wersja PHP"><?php echo $wersjaPHP; ?></span></td>
       </tr><tr>
         <td>Notatka: </td>
         <td><?php echo $notatka;?></td>

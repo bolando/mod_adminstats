@@ -78,6 +78,11 @@ class ModAdminStats
 		return $wynik[0]->note;
 
 	}
+	public static function wersjaPHP()
+    {
+		return phpversion();
+
+	}
 	
 }
 ?>

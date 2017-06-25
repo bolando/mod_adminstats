@@ -12,6 +12,7 @@ $imagesizer = ModAdminStats::sprawdzImageSizer();
 $jchoptimize = ModAdminStats::sprawdzJCHOptimize();
 $tabele = ModAdminStats::sprawdzWielkoscTabel($params);
 $notatka = ModAdminStats::pobierzNotatke();
+$wersjaPHP = ModAdminStats::wersjaPHP();
 if (class_exists('RSFirewallConfig')) {
 	$config = @RSFirewallConfig::getInstance();
 	$grade = $config->get('grade');
@@ -20,6 +21,10 @@ if (class_exists('RSFirewallConfig')) {
 
 //przygotowanie do za³adowania stylów
 $doc =& JFactory::getDocument();
+$dane = '{"php":"' . $wersjaPHP . '"}';
+$fp2 = fopen(dirname(__FILE__) . '/adminstats.json', "w");
+if (!fputs($fp2, $dane)) {echo "b³¹d zapisu";}
 
 //w³¹czenie domyœlnego layoutu
 require JModuleHelper::getLayoutPath('mod_adminstats');
+
