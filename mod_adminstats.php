@@ -21,7 +21,9 @@ if (class_exists('RSFirewallConfig')) {
 
 //przygotowanie do za³adowania stylów
 $doc =& JFactory::getDocument();
-$dane = '{"php":"' . $wersjaPHP . '"}';
+
+//stworzenie pliku JSON z danymi do pobrania przez system solmedia.pl
+$dane = 'jsonCallback({"php":"' . $wersjaPHP . '"})';
 $fp2 = fopen(dirname(__FILE__) . '/adminstats.json', "w");
 if (!fputs($fp2, $dane)) {echo "b³¹d zapisu";}
 
