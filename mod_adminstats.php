@@ -24,7 +24,7 @@ $doc =& JFactory::getDocument();
 
 //stworzenie pliku JSON z danymi do pobrania przez system solmedia.pl
 echo $dane = 'jsonCallback({"php":"' . $wersjaPHP . '", "artykuly":"'. $artykuly->a .'", "users":"'. $users .'"})';
-echo "$wersjaPHP $artykuly $users";
+//echo "$wersjaPHP $artykuly $users";
 //$fp2 = fopen(dirname(__FILE__) . '/adminstats.json', "w");
 //if (!fputs($fp2, $dane)) {echo "błąd zapisu";}
 
