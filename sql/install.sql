@@ -1,0 +1,1 @@
+UPDATE `#__modules` SET `published` = '1' AND  `ordering` = '6' WHERE `module` = 'mod_adminstats';

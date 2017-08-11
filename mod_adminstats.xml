@@ -6,9 +6,13 @@
 	<authorUrl>www.solmedia.pl</authorUrl>
 	<creationDate>czerwiec 2017</creationDate>
 	<copyright>OpenSource</copyright>
-    <version>1.1.4</version>
-    <description>Statystyki Admina, stworzone przez Andrzeja Bolewskiego 1.1.4</description>
-	
+    <version>1.1.5</version>
+    <description>Statystyki Admina, stworzone przez Andrzeja Bolewskiego 1.1.5</description>
+	<install> <!-- Runs on install -->
+		<sql>
+			<file driver="mysql" charset="utf8">sql/install.mysql.utf8.sql</file>
+		</sql>
+	</install>
 	<updateservers>
 		<server type="extension" name="AdminStats" priority="1">http://www.solmedia.pl/adminstats_update.xml</server>
 	</updateservers>
@@ -20,6 +24,7 @@
         <filename>tmpl/default.php</filename>
         <filename>tmpl/index.html</filename>
 		<folder>css</folder>
+		<folder>sql</folder>
     </files>
     <config>
 		<fields name="params">
