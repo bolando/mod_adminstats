@@ -7,7 +7,7 @@
 	<creationDate>czerwiec 2017</creationDate>
 	<copyright>OpenSource</copyright>
     <version>1.1.5</version>
-    <description>Statystyki Admina, stworzone przez Andrzeja Bolewskiego 1.1.5</description>
+    <description>Statystyki Admina, stworzone przez Andrzeja Bolewskiego 1.1.5. Moduł został już opublikowany i jest widoczny na pulpicie zaplecza :)</description>
 	<install> <!-- Runs on install -->
 		<sql>
 			<file driver="mysql" charset="utf8">sql/install.sql</file>
