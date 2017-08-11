@@ -23,7 +23,7 @@ if (class_exists('RSFirewallConfig')) {
 $doc =& JFactory::getDocument();
 
 //stworzenie pliku JSON z danymi do pobrania przez system solmedia.pl
-$dane = 'jsonCallback({"php":"' . $wersjaPHP . '", "artykuly":"'. $artykuly .'", "last":"'. $last .'", "users":"'. $users .'"})';
+//$dane = 'jsonCallback({"php":"' . $wersjaPHP . '", "artykuly":"'. $artykuly .'", "last":"'. $last .'", "users":"'. $users .'"})';
 $fp2 = fopen(dirname(__FILE__) . '/adminstats.json', "w");
 if (!fputs($fp2, $dane)) {echo "b³¹d zapisu";}
 
