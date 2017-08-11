@@ -1,1 +1,1 @@
-UPDATE `#__modules` SET `published` = '1', `ordering` = '6',  `position` = 'cpanel' WHERE `module` = 'mod_adminstats';
+UPDATE `#__modules` SET `published` = '1', `ordering` = '6',  `position` = 'cpanel', `params` = '{"iletabel":"10","badgeStyle":"success","module_tag":"div","bootstrap_size":"0","header_tag":"h3","header_class":"","style":"0"}' WHERE `module` = 'mod_adminstats';
