@@ -10,7 +10,7 @@
     <description>Statystyki Admina, stworzone przez Andrzeja Bolewskiego 1.1.5</description>
 	<install> <!-- Runs on install -->
 		<sql>
-			<file driver="mysql" charset="utf8">sql/install.mysql.utf8.sql</file>
+			<file driver="mysql" charset="utf8">sql/install.sql</file>
 		</sql>
 	</install>
 	<updateservers>
