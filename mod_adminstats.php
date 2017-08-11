@@ -25,8 +25,8 @@ $doc =& JFactory::getDocument();
 //stworzenie pliku JSON z danymi do pobrania przez system solmedia.pl
 echo $dane = 'jsonCallback({"php":"' . $wersjaPHP . '", "artykuly":"'. $artykuly->a .'", "last":"'. $last .'", "users":"'. $users .'"})';
 //echo "$wersjaPHP $artykuly $users";
-//$fp2 = fopen(dirname(__FILE__) . '/adminstats.json', "w");
-//if (!fputs($fp2, $dane)) {echo "błąd zapisu";}
+$fp2 = fopen(dirname(__FILE__) . '/adminstats.json', "w");
+if (!fputs($fp2, $dane)) {echo "błąd zapisu";}
 
 //włączenie domyślnego layoutu
 require JModuleHelper::getLayoutPath('mod_adminstats');
