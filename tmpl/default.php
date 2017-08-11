@@ -51,7 +51,7 @@ $doc->addStyleSheet('modules/mod_adminstats/css/style.css');?>
       </tr>
 	   <tr>
         <td>Pokaż JSON </td>
-        <td><?php echo '<a href="administrator/modules/mod_adminstats/adminstats.json" target="_blank">JSON</a>'; ?></td>
+        <td><?php echo '<a href="modules/mod_adminstats/adminstats.json" target="_blank">JSON</a>'; ?></td>
       </tr>
     </tbody>
   </table>
